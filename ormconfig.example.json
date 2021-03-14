@@ -1,0 +1,20 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "docker",
+    "database": "medapi",
+    "synchronize": true,
+    "logging": false,
+    "timezone": "+0",
+    "entities": [
+        "./src/modules/**/typeorm/entities/*.js"
+     ],
+    "migrations":[
+        "./src/shared/typeorm/migrations/*.js"
+    ],
+    "cli":{
+        "migrationsDir": "./src/shared/typeorm/migrations"
+    }
+}
