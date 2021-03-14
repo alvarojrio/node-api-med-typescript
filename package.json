@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
-    "start": "node dist/shared/http/server.js"
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files"
   },
   "keywords": [],
   "author": "",
