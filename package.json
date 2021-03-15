@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files yarn build",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files npm build",
     "start": "node dist/shared/http/server.js"
   },
   "heroku-run-build-script": true,
