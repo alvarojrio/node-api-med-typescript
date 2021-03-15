@@ -13,7 +13,7 @@
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files yarn build",
     "start": "node dist/shared/http/server.js"
   },
-  "heroku-run-build-script": true
+  "heroku-run-build-script": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
